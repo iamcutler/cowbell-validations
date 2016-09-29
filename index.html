@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validations</title>
+        <script src="https://npmcdn.com/systemjs@0.19.38/dist/system.js"></script>
+    </head>
+    <body>
+
+        <script>
+            System.config({
+                packages: {
+                    "dist": {
+                        "defaultExtension": "js",
+                        "main": "main"
+                    },
+                    "properties": {
+                        "defaultExtension": "js",
+                        "main": "properties/index"
+                    }
+                }
+            });
+
+            System.import("dist");
+            System.import('dist/properties/index.js');
+        </script>
+
+    </body>
+</html>
